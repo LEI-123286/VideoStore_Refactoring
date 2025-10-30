@@ -69,29 +69,6 @@ public class Customer
 		result += "You earned " + frequentRenterPoints + " frequent renter points";
 		return result;
 	}
-	public double getAmount(v1.Rental aRental)
-	{
-		double result = 0;
-
-		// determine amounts for each line
-		switch (aRental.getMovie().getPriceCode())
-		{
-			case REGULAR:
-				result += 2;
-				if (aRental.getDaysRented() > 2)
-					result += (aRental.getDaysRented() - 2) * 1.5;
-				break;
-			case NEW_RELEASE:
-				result += aRental.getDaysRented() * 3;
-				break;
-			case CHILDRENS:
-				result += 1.5;
-				if (aRental.getDaysRented() > 3)
-					result += (aRental.getDaysRented() - 3) * 1.5;
-				break;
-		}
-		return result;
-	}
 
 
 }
