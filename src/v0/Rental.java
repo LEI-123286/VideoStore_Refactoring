@@ -1,19 +1,16 @@
 package v0;
 
+import v6.Movie;
+
 public class Rental
 {
-	private Movie	_movie;
+	private Movie _movie;
 	private int		_daysRented;
 
-	public Rental(Movie movie, int daysRented)
+	public Rental(Movie m1, int daysRented)
 	{
-		_movie = movie;
+		_movie = m1;
 		_daysRented = daysRented;
-	}
-
-	public int getDaysRented()
-	{
-		return _daysRented;
 	}
 
 	public Movie getMovie()
@@ -21,11 +18,15 @@ public class Rental
 		return _movie;
 	}
 
+	public int getDaysRented()
+	{
+		return _daysRented;
+	}
+
 	public double getAmount()
 	{
 		double result = 0;
 
-		// determine amounts for each line
 		switch (getMovie().getPriceCode())
 		{
 			case REGULAR:
@@ -43,5 +44,10 @@ public class Rental
 				break;
 		}
 		return result;
+	}
+
+	public int getFrequentRentalPoints()
+	{
+		return (getMovie().getPriceCode() == Movie.Code.NEW_RELEASE) && getDaysRented() > 1 ? 2 : 1;
 	}
 }
