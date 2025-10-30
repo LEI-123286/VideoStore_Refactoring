@@ -1,12 +1,12 @@
-package v0;
+package v6;
 
 public class Movie {
 
 	public enum Code {REGULAR, CHILDRENS, NEW_RELEASE};
-	
+
 	private String _title;
 	private Code _priceCode;
-	
+
 	public Movie(String title, Code priceCode) {
 		_title = title;
 		_priceCode = priceCode;
