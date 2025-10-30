@@ -1,5 +1,5 @@
 package v0;
-//p
+
 public class Movie {
 
 	public enum Code {REGULAR, CHILDRENS, NEW_RELEASE};

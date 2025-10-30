@@ -1,5 +1,5 @@
 package v0;
-//p
+
 public class Rental
 {
 	private Movie	_movie;
