@@ -20,7 +20,7 @@ public abstract class Main
 		who.addRental(new Rental(m1, 1));
 		who.addRental(new Rental(m2, 2));
 		who.addRental(new Rental(m3, 3));
-		
+
 		System.out.println(who.statement());
 	}
 
