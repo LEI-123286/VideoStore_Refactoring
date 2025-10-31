@@ -1,4 +1,4 @@
-package v0;
+package v6;
 
 import java.util.Vector;
 
@@ -28,7 +28,7 @@ public class Customer
 		String result = "Rental Record for " + getName() + "\n";
 
 		for (Rental each : _rentals)
-			result += "\t" + each.getMovie().getTitle() + "\t" + each.getMovie().getRentalAmount(each.getDaysRented()) + "\n";
+			result += "\t" + each.getMovie().getTitle() + "\t" + each.getAmount() + "\n";
 
 		// add footer lines
 		result += "Amount owed is " + getTotalAmount() + "\n";
@@ -44,7 +44,7 @@ public class Customer
 
 		result += "<ul>\n";
 		for (Rental each : _rentals)
-			result += "\t<li>" + each.getMovie().getTitle() + "\t" +  each.getMovie().getRentalAmount(each.getDaysRented()) +"\n";
+			result += "\t<li>" + each.getMovie().getTitle() + "\t" + each.getAmount()+"\n";
 		result += "</ul>\n";
 
 		// add footer lines
@@ -63,11 +63,19 @@ public class Customer
 		return frequentRenterPoints;
 	}
 
+	public int getTotalFrequentRenterPoints()
+	{
+		int frequentRenterPoints = 0;
+		for (Rental each : _rentals)
+			frequentRenterPoints += each.getFrequentRentalPoints();
+		return frequentRenterPoints;
+	}
+
 	public double getTotalAmount()
 	{
 		double totalAmount = 0;
 		for (Rental each : _rentals)
-			totalAmount += each.getMovie().getRentalAmount(each.getDaysRented());
+			totalAmount += each.getAmount();
 		return totalAmount;
 	}
 }

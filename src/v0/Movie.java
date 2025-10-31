@@ -1,4 +1,4 @@
-package v0;
+package v6;
 
 public class Movie {
 
