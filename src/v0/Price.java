@@ -1,24 +1,20 @@
 package v0;
-//
-public class Price {
+
+public class Price
+{
     public enum Code {REGULAR, CHILDRENS, NEW_RELEASE}
 
-    public Code	_code;
-
-    public Price(Code code)
+    public Code	_priceCode;
+//7
+    public Price()
     {
-        _code = code;
     }
 
-    public Code getCode() {
-        return _code;
-    }
-
-    public double getRentalAmount(int duration)
+    public double getRentalAmount(Movie movie, int duration)
     {
         double result = 0;
 
-        switch (_code)
+        switch (_priceCode)
         {
             case REGULAR:
                 result += 2;
@@ -36,10 +32,4 @@ public class Price {
         }
         return result;
     }
-
-    public int getFrequentRentalPoints(int duration)
-    {
-        return (_code == Code.NEW_RELEASE) && duration > 1 ? 2 : 1;
-    }
 }
-
