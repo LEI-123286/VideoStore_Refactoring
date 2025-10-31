@@ -8,8 +8,7 @@ import java.io.PrintWriter;
  * Filename: Main.java
  * @author fba 6 de Mai de 2013
  ***********************************************************/
-public abstract class Main
-{
+public abstract class Main {
 	/***********************************************************
 	 * @param args
 	 * @throws IOException

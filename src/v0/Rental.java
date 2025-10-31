@@ -1,6 +1,7 @@
 package v0;
 
-public class Rental {
+public class Rental
+{
 	Movie	_movie;
 	private int		_daysRented;
 

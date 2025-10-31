@@ -2,13 +2,18 @@ package v0;
 
 import java.util.Vector;
 
-public class Customer extends teste {
+public class Customer {
 	private String			_name;
 	private Vector<Rental>	_rentals	= new Vector<Rental>();
 
 	public Customer(String _name)
 	{
 		this._name = _name;
+	}
+
+	public void addRental(Rental arg)
+	{
+		_rentals.addElement(arg);
 	}
 
 	public String getName()
