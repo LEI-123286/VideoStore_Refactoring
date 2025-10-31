@@ -42,7 +42,7 @@ public class Movie {
 		}
 		return result;
 	}
-
+//7
 	public int getFrequentRentalPoints(int duration)
 	{
 		return (_priceCode == Code.NEW_RELEASE) && duration > 1 ? 2 : 1;

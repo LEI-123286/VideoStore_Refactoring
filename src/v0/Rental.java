@@ -2,7 +2,7 @@ package v0;
 
 public class Rental
 {
-	private Movie	_movie;
+	Movie	_movie;
 	private int		_daysRented;
 
 	public Rental(Movie movie, int daysRented)
@@ -45,3 +45,4 @@ public class Rental
 		return result;
 	}
 }
+//7

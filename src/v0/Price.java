@@ -5,7 +5,7 @@ public class Price
     public enum Code {REGULAR, CHILDRENS, NEW_RELEASE}
 
     public Code	_priceCode;
-
+//7
     public Price()
     {
     }

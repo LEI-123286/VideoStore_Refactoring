@@ -54,7 +54,7 @@ public class Customer
 
 		return result;
 	}
-
+//7
 	public int getTotalFrequentRenterPoints()
 	{
 		int frequentRenterPoints = 0;
