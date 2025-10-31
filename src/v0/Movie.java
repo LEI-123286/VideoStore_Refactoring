@@ -2,21 +2,20 @@ package v0;
 
 public class Movie {
 
-	public enum Code {REGULAR, CHILDRENS, NEW_RELEASE};
-
 	private String _title;
-	private Code _priceCode;
+	private Price	_price;
 
-	public Movie(String title, Code priceCode) {
+	public Movie(String title, Price price) {
 		_title = title;
-		_priceCode = priceCode;
+		_price = price;
 	}
 
 	public String getTitle() {
 		return _title;
 	}
 
-	public Code getPriceCode() {
-		return _priceCode;
+	public Price getPrice()
+	{
+		return _price;
 	}
 }
