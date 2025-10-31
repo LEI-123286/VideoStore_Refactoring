@@ -1,4 +1,4 @@
-package v6;
+package v0;
 
 public class Movie {
 
@@ -9,15 +9,16 @@ public class Movie {
 
 	public Movie(String title, Code priceCode) {
 		_title = title;
-		_priceCode = priceCode;
+		_price = price;
 	}
 
 	public String getTitle() {
 		return _title;
 	}
 
-	public Code getPriceCode() {
-		return _priceCode;
+	public Price getPrice()
+	{
+		return _price;
 	}
 
 	public double getRentalAmount(int duration)

@@ -1,6 +1,6 @@
 package v0;
 
-import v6.Movie;
+import v0.Movie;
 
 public class Rental
 {

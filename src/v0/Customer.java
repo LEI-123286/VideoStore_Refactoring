@@ -1,9 +1,8 @@
-package v6;
+package v0;
 
 import java.util.Vector;
 
-public class Customer
-{
+public class Customer {
 	private String			_name;
 	private Vector<Rental>	_rentals	= new Vector<Rental>();
 
