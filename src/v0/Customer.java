@@ -54,6 +54,14 @@ public class Customer
 
 		return result;
 	}
+//7
+	public int getTotalFrequentRenterPoints()
+	{
+		int frequentRenterPoints = 0;
+		for (Rental each : _rentals)
+			frequentRenterPoints += each._movie.getFrequentRentalPoints(each.getDaysRented());
+		return frequentRenterPoints;
+	}
 
 	public int getTotalFrequentRenterPoints()
 	{

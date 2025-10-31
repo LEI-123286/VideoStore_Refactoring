@@ -51,3 +51,4 @@ public class Rental
 		return (getMovie().getPriceCode() == Movie.Code.NEW_RELEASE) && getDaysRented() > 1 ? 2 : 1;
 	}
 }
+//7
