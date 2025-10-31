@@ -1,5 +1,5 @@
 package v0;
-
+//
 public class Price {
     public enum Code {REGULAR, CHILDRENS, NEW_RELEASE}
 
